@@ -57,6 +57,10 @@
             mensaje.innerHTML += `<li>${data.texto}</li>`;
         });
 
+        socket.on('connect', ()=>{
+            console.log('Conectado');
+        });
+
         // socket.on('mensaje-bienvenida', (data) => {
         //     console.log(data);
         // });
